@@ -7,7 +7,7 @@ var app = express();
 app.use('/', function( req, res) { 
 	res.send('Hello World'); 
 	}); 
-app.listen(1337); 
-console.log('Server running somewhere at http://localhost: 1337/'); 
+var listener = app.listen(1337); 
+console.log('Server running somewhere at ' + listener.address()); 
 
 module.exports = app;

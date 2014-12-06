@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# don't forget the npm install forever and the chmod +x ./start
 # Invoke the Forever module (to START our Node.js server).
 ./node_modules/forever/bin/forever \
 start \

@@ -1,17 +1,18 @@
-/**
- * New node file
- */
-var express = require('express'); 
-
-
-var app = express(); 
-app.set('domain', 'http://54.149.107.120/');
-
-app.use('/', function( req, res) { 
-	res.send('Hello World'); 
-	}); 
-var listener = app.listen(1337); 
-console.log('Server running somewhere at ' + listener.address().address); 
-console.log(listener.address().port);
-
-module.exports = app;
+// Load the necessary servers.
+var sys = require( "sys" );
+var http = require( "http" );
+ 
+// Create our HTTP server.
+var server = http.createServer(
+function( request, response ){
+ 
+	// Create a SUPER SIMPLE response.
+	response.writeHead( 200, {"content-type": "text/plain"} );
+	response.write( "Hellow world from AWS!\n" );
+	response.end();
+ 	}
+);
+ 
+// Point the HTTP server to port 8080.
+server.listen( 1337 );
+ 

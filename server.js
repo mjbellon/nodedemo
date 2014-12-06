@@ -3,7 +3,10 @@
  */
 var express = require('express'); 
 
+
 var app = express(); 
+app.set('domain', 'http://54.149.107.120/');
+
 app.use('/', function( req, res) { 
 	res.send('Hello World'); 
 	}); 

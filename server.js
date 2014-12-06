@@ -9,6 +9,6 @@ app.use('/', function( req, res) {
 	}); 
 var listener = app.listen(1337); 
 console.log('Server running somewhere at ' + listener.address().address); 
-console.log(server.address().port);
+console.log(listener.address().port);
 
 module.exports = app;

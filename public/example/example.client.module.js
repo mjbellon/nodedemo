@@ -1,4 +1,4 @@
 // Invoke 'strict' JavaScript mode
 'use strict';
 
-angular.module('default', []);
+angular.module('example', []);

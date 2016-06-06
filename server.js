@@ -8,7 +8,6 @@ var pg = require('./config/pg'),
 	express = require('./config/express'),
 	passport = require('./config/passport');
 
-//var db = mongoose();
 var db = pg();
 var app = express(db);
 var passport = passport();
